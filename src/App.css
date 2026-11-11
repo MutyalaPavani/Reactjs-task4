@@ -1,0 +1,233 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 25px 20px 50px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* LIGHT AND DARK MODE */
+
+.light {
+  background: #f0edff;
+  color: #282044;
+}
+
+.dark {
+  background: #171329;
+  color: #ffffff;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+/* THEME BUTTON */
+
+.theme-btn {
+  padding: 12px 23px;
+  border: none;
+  border-radius: 25px;
+  background: #7655d9;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background: #5735b5;
+  transform: translateY(-2px);
+}
+
+/* MAIN SECTION */
+
+.main {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+/* MAIN HEADING */
+
+.main h1 {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.light .main h1 {
+  color: #282044;
+}
+
+.dark .main h1 {
+  color: #ffffff;
+}
+
+/* COUNTER CARD */
+
+.counter-card {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 35px 25px 38px;
+  border-radius: 22px;
+  background: #30264f;
+  color: #ffffff;
+  box-shadow: 0 12px 35px rgba(87, 64, 150, 0.18);
+  transition: 0.3s ease;
+}
+
+.dark .counter-card {
+  background: #29223f;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* CURRENT COUNT LABEL */
+
+.counter-label {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* COUNTER NUMBER - OVERLAP FIX */
+
+.count {
+  display: block;
+  font-size: 76px;
+  font-weight: bold;
+  line-height: 1;
+  color: #c0aaff;
+  margin: 12px 0 14px;
+}
+
+/* COUNTER MESSAGE */
+
+.message {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+/* INCREMENT AND DECREMENT */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.buttons button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #7655d9;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background: #5735b5;
+  transform: translateY(-3px);
+}
+
+/* RESET BUTTON */
+
+.reset {
+  margin-top: 20px;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 10px;
+  background: #ef6b83;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reset:hover {
+  background: #d94b68;
+  transform: translateY(-3px);
+}
+
+/* THEME STATUS */
+
+.theme-status {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.theme-status span {
+  display: block;
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.light .theme-status {
+  color: #282044;
+}
+
+.dark .theme-status {
+  color: #ffffff;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 500px) {
+  .app {
+    padding: 20px 15px 35px;
+  }
+
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .main h1 {
+    font-size: 32px;
+    margin-bottom: 22px;
+  }
+
+  .counter-card {
+    padding: 30px 15px;
+  }
+
+  .count {
+    font-size: 65px;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  .buttons button {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+}
